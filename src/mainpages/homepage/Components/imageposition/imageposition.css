@@ -1,0 +1,68 @@
+/* src/main_src/home_page/imageposition/image_position.css */
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the height as needed */
+    }
+  }
+  
+  .image-container-top-right {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    z-index: 10;
+  }
+  
+  .top-right-svg {
+    max-width: 100%; /* Ensures the SVG scales down appropriately */
+    height: auto; /* Maintain aspect ratio */
+    animation: float 5s ease-in-out infinite; /* Apply the floating animation */
+  }
+  
+  .image-container-bottom-left {
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    z-index: 10;
+  }
+  
+  .bottom-left-svg {
+    max-width: 80%; /* Ensures the SVG scales down appropriately */
+    height: auto; /* Maintain aspect ratio */
+    animation: float 3s ease-in-out infinite; /* Apply the floating animation */
+  }
+  
+  /* Adjust SVG size for smaller screens */
+  @media (max-width: 768px) {
+    .top-right-svg {
+      max-width: 50%; /* Adjust size as needed for smaller screens */
+    }
+  }
+  /* Adjust SVG size for smaller screens */
+  @media (max-width: 1182px) {
+    .top-right-svg {
+      max-width: 50%; /* Adjust size as needed for smaller screens */
+    }
+  }
+  
+  /* Adjust SVG size for smaller screens */
+  @media (max-width: 768px) {
+    .bottom-left-svg {
+      max-width: 40%; /* Adjust size as needed for smaller screens */
+    }
+  }
+  /* Adjust SVG size for smaller screens */
+  @media (max-width: 1182px) {
+   .bottom-left-svg {
+      max-width: 47%; /* Adjust size as needed for smaller screens */
+    }
+  }
+  

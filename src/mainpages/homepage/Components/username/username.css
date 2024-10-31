@@ -1,0 +1,90 @@
+/* src/main_src/home_page/user_name/user_name.css */
+.username-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    right: 0px;
+    width: 30%;
+    font-size: 30px;
+    color: beige;
+    background-color: rgb(0, 0, 0); /* Background color for contrast */
+    padding: 10px 20px; /* Added horizontal padding for spacing */
+    border-top-left-radius: 30px; /* Increased border radius */
+    height: 60px;
+    z-index: 1; /* Ensure this is above the backside icon */
+  }
+  
+  .username-icon {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Gap between icon and text */
+    background-color: rgb(255, 255, 255); /* Background color for contrast */
+    border-radius: 100px;
+  }
+  
+  .username-icon-backside {
+    position: absolute;
+    width: 20%; /* Adjust size as needed */
+    height: auto;
+    top: -50px; /* Position it below the container */
+    left: 190px; /* Adjust position as needed */
+    border-radius: 100px;
+    z-index: 0; /* Ensure this is behind the container */
+    transition: transform 0.5s ease, z-index 0.5s ease; /* Transition for animation */
+  }
+  
+  /* Hover effect to bring the backside icon to the front when username-container is hovered */
+  .username-container:hover ~ .username-icon-backside {
+    transform: translateY(-50px); /* Adjust the height as needed */
+    z-index: 2; /* Bring it above the container */
+  }
+  .username-icon-backside-two {
+    position: absolute;
+    width: 12%; /* Adjust size as needed */
+    height: auto;
+    bottom: 30px; /* Position it below the container */
+    right: 0px; /* Adjust position as needed */
+    z-index: 0; /* Ensure this is behind the container */
+    transition: transform 0.5s ease, z-index 0.5s ease; /* Transition for animation */
+  }
+  
+  /* Hover effect to bring the backside icon to the front when username-container is hovered */
+  .username-container:hover ~ .username-icon-backside-two {
+    transform: translateY(-50px); /* Adjust the height as needed */
+    z-index: 2; /* Bring it above the container */
+  }
+  
+  .username-icon-backside-three {
+    position: absolute;
+    width: 12%; /* Adjust size as needed */
+    height: auto;
+    bottom: 10px; /* Position it below the container */
+    right: 40px; /* Adjust position as needed */
+    z-index: 0; /* Ensure this is behind the container */
+    transition: transform 0.5s ease, z-index 0.5s ease; /* Transition for animation */
+  }
+  
+  /* Hover effect to bring the backside icon to the front when username-container is hovered */
+  .username-container:hover ~ .username-icon-backside-three {
+    transform: translateY(-50px); /* Adjust the height as needed */
+    z-index: 2; /* Bring it above the container */
+  }
+  
+  /* Adjust size for smaller screens */
+  @media (max-width: 768px) {
+    .username-container {
+      width: 50%;
+      font-size: 20px; /* Smaller font size */
+      padding: 5px 10px; /* Smaller padding */
+      height: 40px; /* Smaller height */
+      border-top-left-radius: 20px; /* Increased border radius */
+    }
+  
+    .username-icon, .username-icon-backside {
+      width: 20px; /* Smaller icon size */
+      margin-right: 10px; /* Smaller gap */
+    }
+  }
+  

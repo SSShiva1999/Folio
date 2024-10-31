@@ -1,0 +1,63 @@
+.resume-page {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center; /* Center align elements horizontally */
+    padding: 20px; /* Padding around the page */
+    background-color: #f9f9f9; /* Light background for the resume page */
+    position: relative; /* Position for the side lines */
+    height: 100vh; /* Full viewport height */
+}
+
+.line {
+    position: absolute; /* Position for side lines */
+    width: 5px; /* Width of the side lines */
+    background-color: black; /* Color of the side lines */
+    top: 0; /* Align to the top */
+    height: 100%; /* Full height */
+}
+
+.left {
+    left: 0; /* Align left line to the left */
+}
+
+.right {
+    right: 0; /* Align right line to the right */
+}
+
+.title-Resume-font {
+    font-size: 2em; /* Font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-family: 'Arial', sans-serif; /* Font family for the title */
+}
+
+.center-container {
+    display: flex; /* Flexbox for center alignment */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.resume-svg {
+    width: 80%; /* Width for the resume SVG */
+    max-width: 600px; /* Max width for responsiveness */
+}
+
+.float-svg {
+    position: absolute; /* Position for floating SVG */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+}
+
+.download-resume {
+    font-size: 1.2em; /* Font size for the download link */
+    margin-top: 20px; /* Space above the download link */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.underline {
+    display: inline-block; /* Inline block for underline */
+    width: 100px; /* Width of the underline */
+    height: 2px; /* Height of the underline */
+    background-color: black; /* Color of the underline */
+    margin-left: 5px; /* Space between text and underline */
+}

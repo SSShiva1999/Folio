@@ -1,0 +1,61 @@
+.about_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    background: radial-gradient(50% 50% at 50% 50%, #F5BF2B 72%, #FFAE18 100%);
+    padding: 20px; /* Add some padding */
+    height: 100vh; /* Ensure the container takes full viewport height */
+  }
+  
+  .view_resume {
+    align-self: flex-end; /* Aligns to the top right */
+    margin-bottom: 15px; /* Space below the button */
+    font-size: 22px;
+    cursor: pointer; /* Pointer on hover */
+    font-family: Georgia, serif;
+  }
+  .underline-view_resume{
+    display: block; /* Make underline a block element */
+    width: 100%; /* Ensure underline covers the width of the text */
+    height: 2px; /* Adjust height for underline thickness */
+    background-color: #58d68d; /* Default color */
+    transition: background-color 0.5s ease; /* Smooth transition */
+    margin-top: 3px; /* Space between text and underline */
+  }
+  .view_resume:hover .underline-view_resume {
+    background-color: rgb(0, 0, 0); /* Change underline to green on hover */
+  }
+  .about_me {
+    max-width: 1000px; /* Set a maximum width for the About Me section */
+    width: 100%; /* Allow the section to take full width */
+    text-align: left; /* Ensure text is aligned to the left */
+    font-family: serif;
+    font-size: 20px;
+  }
+  
+  .about_content {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    margin-top: 10px; /* Space between heading and content */
+  }
+  
+  .slim_text {
+    font-weight: 300; /* Use a lighter weight for slim text */
+    letter-spacing: 0.9px; /* Slightly increase space between letters */
+    line-height: 1.5; /* Adjust line height for better spacing */
+    font-size: 23px; /* Set font size as needed */
+    font-family: Georgia;
+    margin-right: 20px; /* Space between text and Skill component */
+  }
+  
+  .about_me h2 {
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align the header to the left */
+  }
+  
+  .about_me p {
+    color: #333; /* Set a text color */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin: 8px 0 0 0; /* Space the paragraph from the heading */
+  }
+  

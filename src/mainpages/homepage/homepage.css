@@ -1,0 +1,59 @@
+/* src/main_src/home_page/option_page.css */
+.main_container {
+    position: relative; /* Ensure the container is positioned for absolute positioning of the SVGs */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Example background color, change as needed */
+    background: radial-gradient(50% 50% at 50% 50%, #F5BF2B 72%, #FFAE18 100%);
+  }
+  
+  .container_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the content is centered vertically */
+    z-index: 10;
+  }
+  
+  .content {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    gap: 100px;
+    background-color: black;
+    color: beige;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* src/main_src/home_page/option_page.css */
+  
+  .link {
+    color: inherit; /* Inherit text color from parent */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .link:hover {
+    text-decoration: none; /* Ensure no decoration on hover */
+  }
+  
+  
+  /* Adjust the layout for smaller screens */
+  @media (max-width: 768px) {
+    .content {
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      gap: 50px;
+      padding: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    p {
+      margin: 10px 0; /* Adjust spacing between items */
+    }
+  }

@@ -1,0 +1,120 @@
+.resume-page {
+    background: radial-gradient(50% 50% at 50% 50%, #F5BF2B 72%, #FFAE18 100%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.center-container {
+    background-color: black;
+    color: white;
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    bottom: 0;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    overflow-y: scroll;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1; /* Ensure it's above the lines */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.resume-svg {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align at the top */
+    margin: 20px 0; /* Add some margin for spacing */
+    width: 100%; /* Make the SVG take the full width */
+}
+
+.resume-svg svg {
+    width: 80%; /* Adjust this value to make the SVG larger or smaller */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.title-Resume-font {
+    position: absolute;
+    top: 10%; /* Adjust this value for vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    color: black; /* Title color */
+    font-size: 28px; /* Title font size */
+    font-family: Georgia, serif;
+    z-index: 2; /* Ensure it's above the lines */
+}
+
+.line {
+    position: absolute;
+    top: 25%; /* Adjust for vertical position */
+    width: 2px; /* Adjust width for the lines */
+    height: calc(80% - 15%); /* Extend the line height */
+    background-color: black; /* Line color */
+    z-index: 0; /* Ensure lines are behind the title and container */
+}
+
+.line.left {
+    left: calc(48% - 32%); /* Position on the left side */
+}
+
+.line.right {
+    right: calc(48% - 32%); /* Position on the right side */
+}
+
+.left-text, .right-text {
+    position: absolute;
+    top: 25%; /* Position vertically */
+    transform: rotate(-90deg); /* Rotate text for vertical alignment */
+    font-size: 20px; /* Adjust font size as needed */
+    font-family: Georgia, serif;
+    color: black; /* Text color */
+}
+
+.left-text {
+    left: calc(48% - 32% - 30px); /* Adjust the left text position */
+}
+
+.right-text {
+    right: calc(48% - 32% - 30px); /* Adjust the right text position */
+}
+
+.download-resume {
+    position: absolute;
+    top: 20px; /* Adjust this value to position it vertically */
+    right: 20px; /* Adjust this value to position it horizontally */
+    color: black; /* Text color */
+    font-size: 25px; /* Adjust font size as needed */
+    font-family: Georgia, serif;
+}
+
+.underline {
+    display: block; /* Make underline a block element */
+    width: 100%; /* Ensure underline covers the width of the text */
+    height: 2px; /* Adjust height for underline thickness */
+    background-color: #58d68d; /* Default color */
+    transition: background-color 0.5s ease; /* Smooth transition */
+    margin-top: 3px; /* Space between text and underline */
+}
+
+.download-resume:hover .underline {
+    background-color: rgb(0, 0, 0); /* Change underline to green on hover */
+}
+
+.download-resume:hover {
+    color: black; /* Text remains black on hover */
+}
+
+  
+.float-svg {
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Adjust vertical position */
+    left: 0px; /* Adjust horizontal position */
+    z-index: 2; /* Ensure it's above other elements */
+}
+  

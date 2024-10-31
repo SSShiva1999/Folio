@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+html, body {
+    height: 100%; /* Set height to 100% for the body and HTML */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to align content */
+    flex-direction: column; /* Stack children vertically */
+}
+
+body {
+    padding: 0; /* Remove default body padding */
+    overflow: hidden; /* Prevent scrolling if content overflows */
+}
+
+.skill_container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 95%; /* 90% width */
+    margin: auto; /* Center the container */
+    padding: 5px; /* Padding inside the container */
+    flex-grow: 1; /* Allow the container to grow and fill available space */
+    max-height: calc(100vh - 50px); /* Limit the height to the viewport, accounting for other content */
+    overflow-y: auto; /* Enable vertical scrolling within the container */
+}
+
+/* Media query to adjust the skill_container height based on screen width */
+@media (max-width: 1300px) {
+    .skill_container {
+        max-height: calc(100vh - 50px); /* Keep the maximum height the same */
+        overflow-y: auto; /* Enable vertical scrolling on smaller screens */
+    }
+}
+
+.skills_title {
+    background: linear-gradient(to bottom, black 50%, white 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 10px; /* Optional: Add padding to make it look better */
+}
+.skills_title:hover{
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
+    -webkit-background-clip: text;
+}
+
+.skills_boxes {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping to next line on small screens */
+    justify-content: space-between; /* Space between the boxes */
+    width: 100%; /* Full width for the box area */
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px; /* Padding inside the box area */
+}
+.skills_boxes:hover {
+    background-color: rgb(236, 236, 236); /* Light background */
+}
+
+.skill_box {
+    flex: 1 1 30%; /* Allow boxes to grow equally and set a base width of 30% */
+    margin: 10px; /* Margin between boxes */
+    border: 1px dotted black;
+    border-radius: 5px; /* Rounded corners */
+    position: relative; /* Position relative to place title */
+    padding: 0px; /* Padding inside each box */
+    background-color: #F1E7FE; /* Light background */
+}
+.skill_box:hover {
+    background-color: #dec5ff; /* Light background */
+}
+
+.skill_title {
+    background-color: #C39BF8; /* Background for the title */
+    position: absolute; /* Position outside the box */
+    top: -15px; /* Move title above the box */
+    right: 9px; /* Align title to the right */
+    padding: 5px 10px; /* Padding around the title */
+    border-radius: 5px; /* Rounded corners */
+    font-family: Georgia, serif;
+}
+
+.skill_image{
+margin-top: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .skill_box {
+        flex: 1 90%; /* Stack boxes vertically on small screens */
+    }
+}

@@ -17,7 +17,7 @@ body {
 .skill_container {
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    width: 95%; /* 90% width */
+    width: 100%; /* 90% width */
     margin: auto; /* Center the container */
     padding: 5px; /* Padding inside the container */
     flex-grow: 1; /* Allow the container to grow and fill available space */
@@ -25,13 +25,7 @@ body {
     overflow-y: auto; /* Enable vertical scrolling within the container */
 }
 
-/* Media query to adjust the skill_container height based on screen width */
-@media (max-width: 1300px) {
-    .skill_container {
-        max-height: calc(100vh - 50px); /* Keep the maximum height the same */
-        overflow-y: auto; /* Enable vertical scrolling on smaller screens */
-    }
-}
+
 
 .skills_title {
     background: linear-gradient(to bottom, black 50%, white 50%);
@@ -40,9 +34,10 @@ body {
     text-align: center;
     margin-bottom: 0px;
     font-family: serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     padding: 0 10px; /* Optional: Add padding to make it look better */
+    letter-spacing: 5px;
 }
 .skills_title:hover{
     background: linear-gradient(to bottom, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
@@ -63,6 +58,10 @@ body {
 }
 
 .skill_box {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     flex: 1 1 30%; /* Allow boxes to grow equally and set a base width of 30% */
     margin: 10px; /* Margin between boxes */
     border: 1px dotted black;
@@ -85,13 +84,23 @@ body {
     font-family: Georgia, serif;
 }
 
-.skill_image{
-margin-top: 10px;
+.skill_image {
+    margin-top: 10px; /* Space between title and image */
+    max-width: 100%; /* Ensure image doesn't overflow the box */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .skill_box {
         flex: 1 90%; /* Stack boxes vertically on small screens */
+    }
+}
+
+/* Media query to adjust the skill_container height based on screen width */
+@media (max-width: 1300px) {
+    .skill_container {
+        max-height: calc(100vh - 50px); /* Keep the maximum height the same */
+        overflow-y: auto; /* Enable vertical scrolling on smaller screens */
     }
 }

@@ -58,4 +58,15 @@
     line-height: 1.6; /* Increase line height for better readability */
     margin: 8px 0 0 0; /* Space the paragraph from the heading */
   }
+
+  @media (max-width: 768px) {
+    .slim_text {
+      font-size: 15px; /* Set font size as needed */
+    }
+}
+@media (max-width: 768px) {
+  .slim_text {
+    font-size: 12px; /* Set font size as needed */
+  }
+}
   

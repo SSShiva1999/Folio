@@ -1,0 +1,24 @@
+.experience-image-main {
+    position: absolute; /* Allow positioning relative to the container */
+    top: -50px; /* Adjust top position */
+    right: 25px; /* Adjust right position */
+    z-index: 1; /* Ensure the image is on top */
+  }
+  
+  .experience-image {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  @media (max-width: 768px) {
+    .experience-image-main {
+      position: absolute; /* Allow positioning relative to the container */
+      top: -60px; /* Adjust top position */
+      right: 25px; /* Adjust right position */
+      z-index: 1; /* Ensure the image is on top */
+    }
+    .experience-image {
+      width: 100px; /* Set the desired width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }

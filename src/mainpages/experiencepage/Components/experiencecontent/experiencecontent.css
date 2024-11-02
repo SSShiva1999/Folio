@@ -1,0 +1,148 @@
+.experience-main-conten {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90%;
+    height: 100vh;
+}
+  
+.white-container {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: flex-end; /* Aligns black container to bottom */
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+  
+.black-container {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height:90%;
+    margin-bottom: 0rem; /* Space from bottom of white container */
+    margin-right:3rem; /* Space from bottom of white container */
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: black;
+    overflow-y: hidden;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.5rem;
+    font-family: Georgia, serif;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 1rem;
+    font-family: serif;
+}
+
+.summary {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 1.5rem;
+    width: 70%; /* Occupies 70% of the container from the left */
+    font-family: serif;
+}
+
+.learning-list-container {
+    max-height: 225px;
+    max-width: 90%;
+    overflow-y: auto;
+}
+
+.learning-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.learning-list li {
+    margin-bottom: 1.5rem;
+    font-family: serif;
+    font-size: 16px;
+}
+
+.learning-list li strong {
+    color: black;
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.learning-list p {
+    color: black;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .white-container {
+      width: 100%;
+      height: 70%;
+    }
+
+    .black-container {
+      width: 80%;
+      height: 90%;
+      margin: 1rem;
+    }
+
+    .summary {
+      width: 100%;
+    }
+
+    .learning-list li {
+        font-size: 13px;
+    }
+    
+    .learning-list li strong {
+        font-size: 15px;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: gray;
+        margin-bottom: 1rem;
+        font-family: serif;
+    }
+}
+@media (max-width: 768px) {
+    .summary {
+        width: 100%;
+        font-size: 0.7rem;
+      } 
+
+      .learning-list li {
+        font-size: 10px;
+    }
+    
+    .learning-list li strong {
+        font-size: 10px;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    
+}

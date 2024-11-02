@@ -1,5 +1,5 @@
 /* src/main_src/home_page/option_page.css */
-.main_container {
+.homepage-main-container {
     position: relative; /* Ensure the container is positioned for absolute positioning of the SVGs */
     height: 100vh; /* Full viewport height */
     background-color: #f0f0f0; /* Example background color, change as needed */
@@ -37,8 +37,21 @@
   }
   
   .link:hover {
-    text-decoration: none; /* Ensure no decoration on hover */
-  }
+    text-decoration: none; 
+}
+
+.homelink {
+  color: inherit; /* Inherit text color from parent */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Change to inline-block to allow scaling */
+  transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition for zoom and color change */
+}
+
+.homelink:hover {
+  transform: scale(1.05); /* Adjust scale for a subtle zoom effect */
+  color: rgb(220, 131, 22); /* Change to a darker shade on hover */
+}
+
   
   
   /* Adjust the layout for smaller screens */

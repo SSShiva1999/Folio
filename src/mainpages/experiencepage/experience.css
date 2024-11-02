@@ -1,0 +1,10 @@
+
+.main-experience {
+    background: radial-gradient(50% 50% at 50% 50%, #F5BF2B 72%, #FFAE18 100%);
+    width: 100%;
+    height: 100vh; /* Adjusts to full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

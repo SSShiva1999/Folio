@@ -8,8 +8,10 @@ import Othersskills from '../../../images/othersskills.svg'; // Removed extra sp
 
 const Skill = () => {
   return (
+    <>
+    <h2 className="skills_title">Skills</h2>
     <div className="skill_container"> {/* Full height and width */}
-      <h2 className="skills_title">Skills</h2>
+      
       <div className="skills_boxes"> {/* Background with dotted style */}
         <div className="skill_box">
           <div className="skill_title">Core Technical...</div> {/* Title with background */}
@@ -25,6 +27,7 @@ const Skill = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

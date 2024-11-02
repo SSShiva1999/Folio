@@ -1,0 +1,41 @@
+/* experienceoption.css */
+.main-experience-option {
+    position: absolute; /* Position the container absolutely */
+    top: 40px; /* Adjust this value to move it down from the top */
+  }
+  
+  .option-item-option {
+    color: white; /* White text color */
+    cursor: pointer; /* Change cursor on hover */
+    padding: 20px 50px; /* Padding for each option */
+font-size: 25px;
+
+    background: none; /* Remove any background */
+    text-align: left; /* Align text to the left */
+    background-color: black; /* Black background for the container */
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+  }
+  
+  .option-item-option:hover {
+    background-color: rgb(89, 88, 88); /* Black background for the container */
+    transform: scale(1.05); /* Zoom in slightly on hover */
+  }
+  
+  /* Optional: Add a margin between options */
+  .option-item-option + .option-item-option {
+    margin-top: 10px; /* Space between options */
+  }
+  @media (max-width: 768px) {
+
+    .main-experience-option {
+        top: 70px; /* Adjust this value to move it down from the top */
+      }
+    .option-item-option {
+        padding: 18px 25px; /* Padding for each option */
+font-size: 20px;
+        background-color: black; /* Black background for the container */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+      }
+  }

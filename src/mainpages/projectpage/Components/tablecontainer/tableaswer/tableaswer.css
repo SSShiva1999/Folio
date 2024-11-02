@@ -1,0 +1,30 @@
+/* src/mainpages/projectpage/Components/tablecontainer/tableaswer/tableaswer.css */
+
+.table-answer {
+    text-align: center;         /* Center the content */
+    padding: 20px;             /* Spacing around the content */
+}
+
+/* Default styles for larger screens */
+.ioi-image {
+    max-width: 50vw;           /* Set a maximum width for the image to 50% of the viewport width */
+    height: auto;              /* Maintain the aspect ratio by allowing height to adjust automatically */
+    max-height: 50vw;          /* Set a maximum height for the image */
+    margin-bottom: 10px;       /* Space below the image */
+}
+
+/* Styles for screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+    .ioi-image {
+        max-width: 70vw;       /* Adjust the width to 70% of the viewport width for smaller screens */
+        max-height: 70vw;      /* Adjust the max height accordingly */
+    }
+}
+
+/* Styles for screens smaller than or equal to 325px */
+@media (max-width: 325px) {
+    .ioi-image {
+        max-width: 80vw;       /* Adjust the width to 90% of the viewport width for very small screens */
+        max-height: 90vw;      /* Adjust the max height accordingly */
+    }
+}

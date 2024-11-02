@@ -1,0 +1,106 @@
+.project-about {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    color: black;
+    text-align: left;
+    z-index: 10;
+    max-width: 90%; /* Limit width to prevent overflow on smaller screens */
+}
+
+.selected-text-top {
+    /* font-size: 1.2rem; */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between default and selected text */
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+}
+
+.selected-option-text {
+    /* font-size: 1rem; */
+    font-size: 25px;
+    font-family: Georgia;
+    margin-bottom: 40px;
+
+
+}
+.selected-description-text{
+    max-width: 37%; 
+    font-size: 20px;
+}
+@media (max-width: 1357px) {
+    .selected-description-text{
+        max-width: 35%; 
+        font-size: 20px;
+    } 
+}
+@media (max-width: 1357px) {
+    .selected-description-text{
+        max-width: 28.50%; 
+        font-size: 20px;
+    } 
+}
+/* Responsive adjustments */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-about {
+        top: 13px;
+    }
+    .selected-text-top {
+        font-size: 1.60rem;
+        margin-bottom: 6px;
+    }
+
+    .selected-option-text {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .selected-description-text{
+        max-width:60%; 
+        font-size: 0.5rem;
+
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 630px) {
+    .project-about {
+        top: 20px;
+    }
+    .selected-text-top {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .selected-option-text {
+        font-size: 1.50rem;
+        margin-bottom: 10px;
+    }
+    .selected-description-text{
+        max-width: 100%; 
+        font-size:1rem;
+        
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 425px) {
+    .project-about {
+        top: 20px;
+    }
+    .selected-text-top {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .selected-option-text {
+        font-size: 1.50rem;
+        margin-bottom: 10px;
+    }
+    .selected-description-text{
+        max-width: 100%; 
+        font-size:0.8rem;
+        
+    }
+}

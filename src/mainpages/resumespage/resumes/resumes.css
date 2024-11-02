@@ -11,12 +11,12 @@
 .center-container {
     background-color: black;
     color: white;
-    width: 60%;
+    width:70%;
     position: absolute;
     top: 15%;
     bottom: 0;
     border-radius: 10px 10px 0 0;
-    padding: 20px;
+    padding: 10px;
     overflow-y: scroll;
     text-align: center;
     font-size: 24px;
@@ -30,14 +30,11 @@
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center horizontally */
     align-items: flex-start; /* Align at the top */
-    margin: 20px 0; /* Add some margin for spacing */
+    margin: 10px 0; /* Add some margin for spacing */
     width: 100%; /* Make the SVG take the full width */
 }
 
-.resume-svg svg {
-    width: 80%; /* Adjust this value to make the SVG larger or smaller */
-    height: auto; /* Maintain aspect ratio */
-}
+
 
 .title-Resume-font {
     position: absolute;
@@ -60,11 +57,11 @@
 }
 
 .line.left {
-    left: calc(48% - 32%); /* Position on the left side */
+    left: calc(43% - 32%); /* Position on the left side */
 }
 
 .line.right {
-    right: calc(48% - 32%); /* Position on the right side */
+    right: calc(43% - 32%); /* Position on the right side */
 }
 
 .left-text, .right-text {
@@ -84,31 +81,37 @@
     right: calc(48% - 32% - 30px); /* Adjust the right text position */
 }
 
-.download-resume {
+.download-resume, .view-experience {
     position: absolute;
-    top: 20px; /* Adjust this value to position it vertically */
-    right: 20px; /* Adjust this value to position it horizontally */
-    color: black; /* Text color */
-    font-size: 25px; /* Adjust font size as needed */
+    right: 30px;
+    color: black;
+    font-size: 20px;
     font-family: Georgia, serif;
+    cursor: pointer;
+}
+
+.download-resume {
+    top: 10px; /* Position Download Resume */
+}
+
+.view-experience {
+    top: 60px; /* Position View Experience below Download Resume */
 }
 
 .underline {
-    display: block; /* Make underline a block element */
-    width: 100%; /* Ensure underline covers the width of the text */
-    height: 2px; /* Adjust height for underline thickness */
-    background-color: #58d68d; /* Default color */
-    transition: background-color 0.5s ease; /* Smooth transition */
-    margin-top: 3px; /* Space between text and underline */
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #58d68d;
+    transition: background-color 0.5s ease;
+    margin-top: 3px;
 }
 
-.download-resume:hover .underline {
-    background-color: rgb(0, 0, 0); /* Change underline to green on hover */
+.download-resume:hover .underline,
+.view-experience:hover .underline {
+    background-color: rgb(0, 0, 0);
 }
 
-.download-resume:hover {
-    color: black; /* Text remains black on hover */
-}
 
   
 .float-svg {
@@ -118,3 +121,43 @@
     z-index: 2; /* Ensure it's above other elements */
 }
   
+/* For screens 768px and smaller (tablet) */
+@media (max-width: 768px) {
+    .center-container {
+        font-size: 15px; /* Smaller font for center text */
+    }
+
+    .title-Resume-font {
+        font-size: 20px; /* Adjust title font size */
+    }
+
+    .download-resume, .view-experience {
+        font-size: 15px; /* Adjust button font size */
+        right: 10px; /* Adjust position */
+    }
+}
+
+/* For screens 480px and smaller (mobile) */
+@media (max-width: 480px) {
+    .center-container {
+        font-size: 10px; /* Smaller font for center text */
+    }
+
+    .title-Resume-font {
+        font-size: 20px; /* Smaller title font */
+    }
+
+    .download-resume{
+        font-size: 13px; /* Smaller button font */
+top: 10px;
+        right: 15px; /* Adjust position */
+    }
+    .view-experience {
+        font-size: 13px; /* Smaller button font */
+top: 40px;
+        
+        right: 15px; /* Adjust position */
+    }
+
+
+}

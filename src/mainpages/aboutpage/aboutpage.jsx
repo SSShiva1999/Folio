@@ -3,15 +3,17 @@ import './aboutpage.css'; // Ensure to create this CSS file
 // import Headercom from '../components/header';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 import Skill from './Components/skills/skill';
+import Headercom from '../components/header/header';
 
 
 const AboutPage = () => {
   return (
     <>
+    <Headercom />
       {/* <Headercom /> */}
       <div className="about_container">
         <div className="view_resume">
-          <div><Link to="/resume" className="link">View Resume /.</Link></div>
+          <div><Link to="/resumes" className="link">View Resume /.</Link></div>
           <span className="underline-view_resume"></span>
         </div>
         <div className="about_me">

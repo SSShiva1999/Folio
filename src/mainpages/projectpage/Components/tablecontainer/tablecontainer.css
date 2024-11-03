@@ -25,6 +25,26 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.table-options::-webkit-scrollbar-thumb{
+  scrollbar-width: thin;
+    scrollbar-color: rgb(255, 255, 255) #f5f5f5;
+}
+
+.table-options::-webkit-scrollbar {
+  width: 8px; /* Set the scrollbar width */
+}
+
+.table-options::-webkit-scrollbar-track {
+  background: #aaaaaa; /* Background color of the scrollbar track */
+}
+
+.table-options::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* Thumb color */
+  border-radius: 10px; /* Optional: round scrollbar corners */
+  border: 2px solid #000000; /* Add border for contrast */
+}
+
 .option-item {
   position: relative; /* Enable positioning for the image */
   font-family: Georgia, serif;
@@ -67,22 +87,6 @@
   width: 90%;
   height: auto;
 }
-@media (max-width: 768px) {
-  .option-item img {
-    width: 20px;
-  }
-  .top-viewitem-image{
-display: none; /* Hides the element */
-  }
-}
-
-@media (max-width: 425px) {
-  .option-item img {
-    width: 15px;
-  }
-}
-
-
 .options-list {
   list-style-type: none;
   padding: 0;
@@ -113,9 +117,7 @@ display: none; /* Hides the element */
   border-radius: 20px;
 }
 
-@media (max-width: 768px) {
 
-}
 
 @media (max-width: 768px) {
   .table-container {
@@ -137,8 +139,8 @@ display: none; /* Hides the element */
 
   .table-answer {
       width: 85vw;
-      height: 70vw;
-      margin-bottom: 10px;
+      height: 50vw;
+      margin-bottom: 5px;
       background-color: rgba(255, 255, 255, 0.5);
       box-shadow: 0px 4px 8px rgba(133, 133, 133, 0.2);
       border-radius: 5px;
@@ -178,7 +180,7 @@ display: none; /* Hides the element */
     right: 50%;
     transform: translate(50%, 50%);
     width: 90vw;
-    height: 140vw;
+    height: 120vw;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.5);
     flex-direction: column;
@@ -190,8 +192,8 @@ display: none; /* Hides the element */
 }
 
 .table-answer {
-    width: 85vw;
-    height: 100vw;
+    width: 90vw;
+    height: 80vw;
     margin-bottom: 0px;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 4px 8px rgba(133, 133, 133, 0.2);
@@ -224,4 +226,18 @@ display: none; /* Hides the element */
 
 
 }
+}
+@media (max-width: 768px) {
+  .option-item img {
+    width: 20px;
+  }
+  .top-viewitem-image{
+display: none; /* Hides the element */
+  }
+}
+
+@media (max-width: 425px) {
+  .option-item img {
+    width: 15px;
+  }
 }

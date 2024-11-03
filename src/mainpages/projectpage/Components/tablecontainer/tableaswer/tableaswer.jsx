@@ -1,6 +1,6 @@
 // src/mainpages/projectpage/Components/tablecontainer/tableaswer/TableAnswer.jsx
 
-import React from 'react';
+import React, { useState } from 'react';
 import Reactjs from '../../../../images/reactjs.svg'; 
 import Reactnative from '../../../../images/reactnative.svg'; 
 import Dev from '../../../../images/dev.svg'; 
@@ -17,12 +17,24 @@ const optionsData = [
 ];
 
 const TableAnswer = ({ selectedOption = 'Sundaram FAST Site' }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
   const selectedOptionData = optionsData.find(option => option.name === selectedOption);
   const selectedImage = selectedOptionData ? selectedOptionData.img : optionsData[0].img; // Default image if no option is selected
 
+  const handleImageClick = () => {
+    setIsClicked(true);
+    setTimeout(() => setIsClicked(false), 300); // Reset after animation
+  };
+
   return (
     <div className="table-answer" style={{ textAlign: 'center', padding: '20px' }}>
-      <img src={selectedImage} alt="Selected Option" className="ioi-image" />
+      <img
+        src={selectedImage}
+        alt="Selected Option"
+        className={`ioi-image ${isClicked ? 'clicked' : ''}`}
+        onClick={handleImageClick}
+      />
     </div>
   );
 };

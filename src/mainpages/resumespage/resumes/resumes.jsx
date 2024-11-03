@@ -2,7 +2,7 @@ import React from 'react';
 import './resumes.css';
 import Headercom from '../../components/header/header';
 import Resumesvg from "../../images/resumesvg.svg";
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
 
 const Resumes = () => {
   return (
@@ -19,11 +19,13 @@ const Resumes = () => {
           </div>
         </div>
         <div className="download-resume">
-          Download Resume /.
+          <a href="/Folio/shivashankarresume.pdf" target="_blank" rel="noopener noreferrer" className="link">
+            Download Resume /.
+          </a>
           <span className="underline"></span>
         </div>
         <div className="view-experience">
-        <Link to="/experience" className="link">View My Experience /.</Link>
+          <Link to="/experience" className="link">View My Experience /.</Link>
           <span className="underline"></span>
         </div>
       </div>

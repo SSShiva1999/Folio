@@ -135,6 +135,13 @@
         font-size: 15px; /* Adjust button font size */
         right: 10px; /* Adjust position */
     }
+    .resume-page::-webkit-scrollbar {
+        width: 6px; /* Narrower scrollbar for mobile */
+    }
+    
+    .resume-page::-webkit-scrollbar-thumb {
+        border-radius: 8px; /* Slightly smaller radius for mobile */
+    }
 }
 
 /* For screens 480px and smaller (mobile) */
@@ -160,4 +167,24 @@ top: 40px;
     }
 
 
+}
+/* Custom scrollbar styling */
+.resume-page::-webkit-scrollbar {
+    width: 8px; /* Set the scrollbar width */
+}
+
+.resume-page::-webkit-scrollbar-track {
+    background: #aaaaaa; /* Background color of the scrollbar track */
+}
+
+.resume-page::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255); /* Thumb color */
+    border-radius: 10px; /* Optional: round scrollbar corners */
+    border: 2px solid #f5f5f5; /* Add border for contrast */
+}
+
+/* Scrollbar styling for Firefox */
+.resume-page {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 255, 255) #f5f5f5;
 }

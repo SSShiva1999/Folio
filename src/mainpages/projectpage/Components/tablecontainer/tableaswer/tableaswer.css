@@ -16,7 +16,7 @@
 /* Styles for screens smaller than or equal to 768px */
 @media (max-width: 768px) {
     .ioi-image {
-        max-width: 70vw;       /* Adjust the width to 70% of the viewport width for smaller screens */
+        max-width: 80vw;       /* Adjust the width to 70% of the viewport width for smaller screens */
         max-height: 70vw;      /* Adjust the max height accordingly */
     }
 }

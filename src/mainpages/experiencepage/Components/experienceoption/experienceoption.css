@@ -1,7 +1,7 @@
 /* experienceoption.css */
 .main-experience-option {
     position: absolute; /* Position the container absolutely */
-    top: 40px; /* Adjust this value to move it down from the top */
+    top: 20px; /* Adjust this value to move it down from the top */
   }
   
   .option-item-option {
@@ -24,16 +24,16 @@ border-bottom-right-radius: 10px;
   
   /* Optional: Add a margin between options */
   .option-item-option + .option-item-option {
-    margin-top: 10px; /* Space between options */
+    margin-top: 5px; /* Space between options */
   }
   @media (max-width: 768px) {
 
     .main-experience-option {
-        top: 70px; /* Adjust this value to move it down from the top */
+        top: 40px; /* Adjust this value to move it down from the top */
       }
     .option-item-option {
-        padding: 18px 25px; /* Padding for each option */
-font-size: 20px;
+        padding: 15px 15px; /* Padding for each option */
+font-size: 15px;
         background-color: black; /* Black background for the container */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;

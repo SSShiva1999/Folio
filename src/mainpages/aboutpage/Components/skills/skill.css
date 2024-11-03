@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+    box-sizing: border-box; 
 }
 
 html, body {
-    height: 100%; /* Set height to 100% for the body and HTML */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Use flexbox to align content */
-    flex-direction: column; /* Stack children vertically */
+    height: 100%; 
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
 }
 
 body {

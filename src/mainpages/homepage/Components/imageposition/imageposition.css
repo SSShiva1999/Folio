@@ -35,7 +35,7 @@
   }
   
   .bottom-left-svg {
-    max-width: 80%; /* Ensures the SVG scales down appropriately */
+    max-width: 60%; /* Ensures the SVG scales down appropriately */
     height: auto; /* Maintain aspect ratio */
     animation: float 3s ease-in-out infinite; /* Apply the floating animation */
   }

@@ -13,12 +13,12 @@ import View from "../../../images/productview.svg"; // Import the contactme.gif 
 const optionsData = [
   { 
     name: 'Sundaram FAST Site', 
-    description: 'Developed a platform that streamlines user experiences and accelerates business growth for Sundaram Finance Limited.', 
+    description: 'Developed a platform that streamlines user experiences and accelerates business growth for Sundaram Fin Ltd.', 
     img: Site 
   },
   { 
     name: 'Sundaram FAST APP', 
-    description: 'Created a versatile mobile application to enhance productivity and customer satisfaction for Sundaram FAST.', 
+    description: 'Created a versatile mobile application to enhance productivity and customer satisfaction for Sundaram Ltd.', 
     img: Sitefast 
   },
   { 
@@ -33,7 +33,7 @@ const optionsData = [
   },
   { 
     name: 'Coming Soon....', 
-    description: 'Stay tuned for exciting updates as we continue to innovate and bring new projects to life!', 
+    description: 'Building a feature-rich movie booking platform for back-office operations and end-user convenience using the MERN stack.', 
     img: Comeing 
   }
 ];

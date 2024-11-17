@@ -95,6 +95,20 @@ body {
     .skill_box {
         flex: 1 90%; /* Stack boxes vertically on small screens */
     }
+    .skill_image {
+        margin-top: 10px; /* Space between title and image */
+        max-width:90%; /* Ensure image doesn't overflow the box */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 425px) {
+    .skill_image {
+        margin-top: 10px; /* Space between title and image */
+        max-height: 90%;
+
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 
 /* Media query to adjust the skill_container height based on screen width */
@@ -103,4 +117,29 @@ body {
         max-height: calc(100vh - 50px); /* Keep the maximum height the same */
         overflow-y: auto; /* Enable vertical scrolling on smaller screens */
     }
+    .skill_image {
+        margin-top: 10px; /* Space between title and image */
+        max-height: 90%;
+        height: auto; /* Maintain aspect ratio */
+    }
 }
+
+
+.skill_container::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+  }
+  
+  .skill_container::-webkit-scrollbar-track {
+    background: transparent; /* Background of the track */
+  }
+  
+  .skill_container::-webkit-scrollbar-thumb {
+    background: black; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  /* Ensure scrollbars work globally if required */
+  .skill_container {
+    scrollbar-color: black transparent;
+    scrollbar-width: thin;
+  }

@@ -20,7 +20,7 @@ const Resumes = () => {
         </div>
         <div className="download-resume">
           <a href="/Folio/shivashankarresume.pdf" target="_blank" rel="noopener noreferrer" className="link">
-            Download Resume /.
+            View Resume /.
           </a>
           <span className="underline"></span>
         </div>

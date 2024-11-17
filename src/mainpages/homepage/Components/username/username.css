@@ -143,7 +143,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      bottom: 8%; /* Adjust to your preference */
+      bottom: 16%; /* Adjust to your preference */
       right: 14%; /* Adjust for horizontal placement */
       width: auto; /* Let the width adjust naturally */
       font-size: 18px; /* Smaller font size for responsiveness */
@@ -195,21 +195,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      top: 18%; /* Adjust to your preference */
-      right: 17%; /* Adjust for horizontal placement */
+      top:11%; /* Adjust to your preference */
+      right: 2%; /* Adjust for horizontal placement */
       width: auto; /* Let the width adjust naturally */
-      font-size: 18px; /* Smaller font size for responsiveness */
+      font-size: 10px; /* Smaller font size for responsiveness */
       color: rgb(255, 255, 255);
       background-color: rgb(0, 0, 0); /* Background color for contrast */
       padding: 5px 10px; /* Smaller padding */
       border-top-left-radius: 20px; /* Increased border radius */
-      border-bottom-right-radius: 20px; /* Increased border radius */
+      border-bottom-left-radius: 20px; /* Increased border radius */
       transform: rotate(0deg); /* Turn horizontally pointing to the bottom */
       transform-origin: right bottom; /* Adjust rotation origin */
   }
 
   .username-icon {
-      width: 20px; /* Smaller icon size */
+      width: 15px; /* Smaller icon size */
       height: auto;
       margin-right: 10px; /* Smaller gap between icon and text */
   }

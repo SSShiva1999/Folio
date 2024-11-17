@@ -87,4 +87,59 @@
       margin-right: 10px; /* Smaller gap */
     }
   }
+  /* src/main_src/home_page/user_name/user_name.css */
+
+/* Default styling remains unchanged; responsive changes below */
+/* Animation keyframes for floating top to bottom */
+
+
+  @media (max-width: 768px) {
+    .username-container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 20%; /* Adjust to your preference */
+        right: 10%; /* Adjust for horizontal placement */
+        width: auto; /* Let the width adjust naturally */
+        font-size: 20px; /* Smaller font size for responsiveness */
+        color: beige;
+        background-color: rgb(0, 0, 0); /* Background color for contrast */
+        padding: 5px 10px; /* Smaller padding */
+        border-radius: 20px; /* Rounded corners */
+        transform: rotate(90deg); /* Turn horizontally pointing to the bottom */
+        transform-origin: right bottom; /* Adjust rotation origin */
+    }
+  
+    .username-icon {
+        width: 20px; /* Smaller icon size */
+        height: auto;
+        margin-right: 10px; /* Smaller gap between icon and text */
+    }
+  
+    /* Hide these images below 768px */
+    .username-icon-backside,
+    .username-icon-backside-two,
+    .username-icon-backside-three {
+        display: none;
+    }
+  
+    /* Animation for image float */
+    .username-icon-backside {
+        position: absolute;
+        animation: float 5s infinite ease-in-out; /* Apply float animation */
+    }
+  
+    @keyframes float {
+        0% {
+            transform: translateY(-50px); /* Start slightly above */
+        }
+        50% {
+            transform: translateY(20px); /* Float downward */
+        }
+        100% {
+            transform: translateY(-50px); /* Reset to starting point */
+        }
+    }
+  }
   

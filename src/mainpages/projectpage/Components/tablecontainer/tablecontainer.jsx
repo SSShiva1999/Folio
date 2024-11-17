@@ -13,12 +13,12 @@ import View from "../../../images/productview.svg"; // Import the contactme.gif 
 const optionsData = [
   { 
     name: 'Sundaram FAST Site', 
-    description: 'Developed a platform that streamlines user experiences and accelerates business growth for Sundaram Fin Ltd.', 
+    description: 'Designed and launched a platform that enhances user experiences and drives business growth for SFL', 
     img: Site 
   },
   { 
     name: 'Sundaram FAST APP', 
-    description: 'Created a versatile mobile application to enhance productivity and customer satisfaction for Sundaram Ltd.', 
+    description: 'Created a mobile application for SFL, enhancing productivity and customer satisfaction, with 90% of errors avoided.', 
     img: Sitefast 
   },
   { 

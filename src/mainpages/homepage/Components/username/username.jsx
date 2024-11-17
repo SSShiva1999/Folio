@@ -17,5 +17,5 @@ const Usernamewithimage = () => {
     </>
   );
 }
-
+// i have tilt the username content in the response view in the corner of the right side in the bottom and hide other three images
 export default Usernamewithimage;

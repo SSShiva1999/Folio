@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import './header.css';
 import Headerimage from '../../images/header.svg';
@@ -55,9 +56,7 @@ const Headercom = () => {
             <hr />
             <Link to="/experience" className="link"><p>Experiences</p></Link>
             <hr />
-            <a href="https://ssshiva1999.github.io/Contactme/" target="_blank" rel="noopener noreferrer" className="link">
-              ContactMe
-           </a>
+            <Link to="https://ssshiva1999.github.io/Contactme/" target="_blank" rel="noopener noreferrer" className="link"><p>ContactMe</p></Link>
             <hr />
           </div>
           <div className="resume_tem">

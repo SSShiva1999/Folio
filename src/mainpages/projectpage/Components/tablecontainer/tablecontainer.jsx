@@ -8,18 +8,31 @@ import Smm from "../../../images/smm.svg";
 import TableAnswer from './tableaswer/tableaswer';
 import ContactMe from "../../../images/contactme.gif"; // Import the contactme.gif image
 import View from "../../../images/productview.svg"; // Import the contactme.gif image
+import Site1 from "../../../images/site1.svg"; 
+import Site2 from "../../../images/site2.svg"; 
+import Site3 from "../../../images/site3.svg"; 
 
 // Define options data including names, descriptions, and images
 const optionsData = [
   { 
-    name: 'Sundaram FAST Site', 
+    name: 'Back Office Site', 
     description: 'Designed and launched a platform that enhances user experiences and drives business growth for SFL', 
     img: Site 
   },
   { 
-    name: 'Sundaram FAST APP', 
-    description: 'Created a mobile application for SFL, enhancing productivity and customer satisfaction, with 90% of errors avoided.', 
-    img: Sitefast 
+    name: 'Application For Sales Team', 
+    description: 'Built a React Native app for sales to track business sources, metrics, and targets, increasing leads 90%', 
+    img: Site2 
+  },
+  { 
+    name: 'Application For Customers', 
+    description: 'Developed a customer app, boosting engagement by 30%, collaborating with teams to optimize data flow and reduce crashes', 
+    img: Site1 
+  },
+  { 
+    name: 'Website Revamp', 
+    description: 'Built a responsive website for Sundaram Finance with React JS, MySQL, and third-party API integrations, reducing queries', 
+    img: Site3 
   },
   { 
     name: 'My Dev Folio', 
@@ -28,7 +41,7 @@ const optionsData = [
   },
   { 
     name: 'WhatsApp API', 
-    description: 'Developed a WhatsApp API for daily reports, allowing clients to access updates from multiple salesmen.', 
+    description: 'Developed a WhatsApp Message Center, delivering market insights and portfolio updates, improving manual processes', 
     img: Smm 
   },
   { 
@@ -55,7 +68,7 @@ const TableContainer = ({ setSelectedText, setSelectedDescription }) => {
           return nextIndex;
         });
       }
-    }, 2000); // Change option every 2 seconds
+    }, 5000); // Change option every 2 seconds
   };
 
   useEffect(() => {
